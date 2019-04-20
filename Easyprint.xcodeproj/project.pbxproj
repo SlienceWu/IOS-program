@@ -7,14 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA045F61ECCB745B3528DA0C /* Pods_Easyprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779E9140082B0B38B90D744E /* Pods_Easyprint.framework */; };
+		DD0667C020EE347100139923 /* ModelDetailControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0667BF20EE347100139923 /* ModelDetailControll.swift */; };
+		DD0690832106B5AF001AAEC6 /* PrinterProfileViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0690822106B5AF001AAEC6 /* PrinterProfileViewControll.swift */; };
+		DD0690852106BBE6001AAEC6 /* MaterialProflieViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0690842106BBE6001AAEC6 /* MaterialProflieViewControll.swift */; };
+		DD0690872106F8AE001AAEC6 /* PrinterProfileDetailViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0690862106F8AE001AAEC6 /* PrinterProfileDetailViewControll.swift */; };
+		DD0690892106F8CE001AAEC6 /* MaterialProfileDetailViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0690882106F8CE001AAEC6 /* MaterialProfileDetailViewControll.swift */; };
+		DD088A442109BE2100ED7652 /* ResetPasswordViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD088A432109BE2000ED7652 /* ResetPasswordViewControll.swift */; };
+		DD09425D20FCA03500BECDFD /* MoveViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09425C20FCA03500BECDFD /* MoveViewControll.swift */; };
+		DD09425F20FCA5A100BECDFD /* TempViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09425E20FCA5A100BECDFD /* TempViewControll.swift */; };
+		DD09426120FCAEA900BECDFD /* LevelViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09426020FCAEA900BECDFD /* LevelViewControll.swift */; };
+		DD09426320FCB03B00BECDFD /* FilamentViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09426220FCB03B00BECDFD /* FilamentViewControll.swift */; };
+		DD09426520FCB04F00BECDFD /* WifiViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09426420FCB04F00BECDFD /* WifiViewControll.swift */; };
+		DD09426720FCB06200BECDFD /* ConfigViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09426620FCB06200BECDFD /* ConfigViewControll.swift */; };
+		DD09426920FCC59600BECDFD /* WifiSetControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09426820FCC59600BECDFD /* WifiSetControll.swift */; };
+		DD0A3BFF210C0165006CDDF6 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A3BFE210C0165006CDDF6 /* ProgressView.swift */; };
+		DD0BBAAC20F0A79500DE8F88 /* RegisterViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBAAB20F0A79500DE8F88 /* RegisterViewControll.swift */; };
+		DD0BBAAE20F0AB0E00DE8F88 /* ForgetPasswordViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBAAD20F0AB0E00DE8F88 /* ForgetPasswordViewControll.swift */; };
+		DD0D787E21128E10007250EB /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D787D21128E10007250EB /* ResponseError.swift */; };
+		DD0EF265211003C1005465E4 /* ModelListViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EF264211003C1005465E4 /* ModelListViewControll.swift */; };
+		DD0F5D5D211931DB003C5D3A /* BaseNavigationControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F5D5C211931DB003C5D3A /* BaseNavigationControll.swift */; };
+		DD1018E8213E7B7100524D8C /* ModelPrintControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1018E7213E7B7100524D8C /* ModelPrintControll.swift */; };
+		DD1163B4211D7D3200D0D5AD /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1163B3211D7D3200D0D5AD /* ShadowView.swift */; };
+		DD116B0C2108158A001D3EF1 /* PrinterDetailViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD116B0B2108158A001D3EF1 /* PrinterDetailViewControll.swift */; };
+		DD12CAFA218FDC26006B394F /* ChooseFileControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12CAF9218FDC26006B394F /* ChooseFileControll.swift */; };
+		DD13774C21479CB200C98142 /* SingletonSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13774B21479CB200C98142 /* SingletonSocket.swift */; };
+		DD13A11920FDD43A00AEBEA5 /* PrintBaseViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13A11820FDD43A00AEBEA5 /* PrintBaseViewControll.swift */; };
+		DD1466F620E5D14E00BB3B22 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1466F520E5D14E00BB3B22 /* MyCustomView.swift */; };
 		DD1994CF20A57B75000F1048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1994CE20A57B75000F1048 /* AppDelegate.swift */; };
 		DD1994D120A57B75000F1048 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1994D020A57B75000F1048 /* ViewController.swift */; };
 		DD1994D420A57B75000F1048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1994D220A57B75000F1048 /* Main.storyboard */; };
 		DD1994D620A57B7C000F1048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1994D520A57B7C000F1048 /* Assets.xcassets */; };
 		DD1994D920A57B7C000F1048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1994D720A57B7C000F1048 /* LaunchScreen.storyboard */; };
+		DD1994E320A5834B000F1048 /* img in Resources */ = {isa = PBXBuildFile; fileRef = DD1994E220A5834A000F1048 /* img */; };
+		DD1C17A320EF434600499FDB /* LoginViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C17A220EF434600499FDB /* LoginViewControll.swift */; };
+		DD3654B620F463C000403BB3 /* AboutViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3654B520F463C000403BB3 /* AboutViewControll.swift */; };
+		DD3654B820F4A43300403BB3 /* MyViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3654B720F4A43300403BB3 /* MyViewControll.swift */; };
+		DD38D91220F6F176005A7697 /* MyPrinterViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD38D91120F6F176005A7697 /* MyPrinterViewControll.swift */; };
+		DD433C6A20F5CE50009915FF /* FeedbackViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD433C6920F5CE50009915FF /* FeedbackViewControll.swift */; };
+		DD433C6C20F60D19009915FF /* PasswordViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD433C6B20F60D19009915FF /* PasswordViewControll.swift */; };
+		DD463D2520EB94BC003A257C /* DataFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD463D2420EB94BC003A257C /* DataFile.swift */; };
+		DD5182A02105F53500648950 /* BindViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51829F2105F53500648950 /* BindViewControll.swift */; };
+		DD59644F20E4C2AB00B28CDF /* CouldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59644E20E4C2AB00B28CDF /* CouldViewController.swift */; };
+		DD59645120E4E8FD00B28CDF /* childViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59645020E4E8FD00B28CDF /* childViewControllers.swift */; };
+		DD871D712134D90B009103BE /* MenuViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD871D702134D90B009103BE /* MenuViewControll.swift */; };
+		DD871D7521356B2C009103BE /* MainViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD871D7421356B2C009103BE /* MainViewControll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		108444707E4F0C026838344A /* Pods-Easyprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyprint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easyprint/Pods-Easyprint.release.xcconfig"; sourceTree = "<group>"; };
+		779E9140082B0B38B90D744E /* Pods_Easyprint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easyprint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67C7165926C34F628FDE648 /* Pods-Easyprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyprint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easyprint/Pods-Easyprint.debug.xcconfig"; sourceTree = "<group>"; };
+		DD0667BF20EE347100139923 /* ModelDetailControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailControll.swift; sourceTree = "<group>"; };
+		DD0690822106B5AF001AAEC6 /* PrinterProfileViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterProfileViewControll.swift; sourceTree = "<group>"; };
+		DD0690842106BBE6001AAEC6 /* MaterialProflieViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialProflieViewControll.swift; sourceTree = "<group>"; };
+		DD0690862106F8AE001AAEC6 /* PrinterProfileDetailViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterProfileDetailViewControll.swift; sourceTree = "<group>"; };
+		DD0690882106F8CE001AAEC6 /* MaterialProfileDetailViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialProfileDetailViewControll.swift; sourceTree = "<group>"; };
+		DD088A432109BE2000ED7652 /* ResetPasswordViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewControll.swift; sourceTree = "<group>"; };
+		DD09425C20FCA03500BECDFD /* MoveViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewControll.swift; sourceTree = "<group>"; };
+		DD09425E20FCA5A100BECDFD /* TempViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewControll.swift; sourceTree = "<group>"; };
+		DD09426020FCAEA900BECDFD /* LevelViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewControll.swift; sourceTree = "<group>"; };
+		DD09426220FCB03B00BECDFD /* FilamentViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilamentViewControll.swift; sourceTree = "<group>"; };
+		DD09426420FCB04F00BECDFD /* WifiViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiViewControll.swift; sourceTree = "<group>"; };
+		DD09426620FCB06200BECDFD /* ConfigViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControll.swift; sourceTree = "<group>"; };
+		DD09426820FCC59600BECDFD /* WifiSetControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSetControll.swift; sourceTree = "<group>"; };
+		DD0A3BFE210C0165006CDDF6 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DD0BBAAB20F0A79500DE8F88 /* RegisterViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControll.swift; sourceTree = "<group>"; };
+		DD0BBAAD20F0AB0E00DE8F88 /* ForgetPasswordViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewControll.swift; sourceTree = "<group>"; };
+		DD0D787D21128E10007250EB /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		DD0EF264211003C1005465E4 /* ModelListViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListViewControll.swift; sourceTree = "<group>"; };
+		DD0F5D5C211931DB003C5D3A /* BaseNavigationControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationControll.swift; sourceTree = "<group>"; };
+		DD1018E7213E7B7100524D8C /* ModelPrintControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPrintControll.swift; sourceTree = "<group>"; };
+		DD1163B3211D7D3200D0D5AD /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		DD116B0B2108158A001D3EF1 /* PrinterDetailViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterDetailViewControll.swift; sourceTree = "<group>"; };
+		DD12CAF9218FDC26006B394F /* ChooseFileControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFileControll.swift; sourceTree = "<group>"; };
+		DD13774B21479CB200C98142 /* SingletonSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonSocket.swift; sourceTree = "<group>"; };
+		DD13A11820FDD43A00AEBEA5 /* PrintBaseViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintBaseViewControll.swift; sourceTree = "<group>"; };
+		DD1466F520E5D14E00BB3B22 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		DD1994CB20A57B75000F1048 /* Easyprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easyprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1994CE20A57B75000F1048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD1994D020A57B75000F1048 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +91,20 @@
 		DD1994D520A57B7C000F1048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1994D820A57B7C000F1048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1994DA20A57B7C000F1048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1994E220A5834A000F1048 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = SOURCE_ROOT; };
+		DD1C17A220EF434600499FDB /* LoginViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControll.swift; sourceTree = "<group>"; };
+		DD3654B520F463C000403BB3 /* AboutViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewControll.swift; sourceTree = "<group>"; };
+		DD3654B720F4A43300403BB3 /* MyViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewControll.swift; sourceTree = "<group>"; };
+		DD38D91120F6F176005A7697 /* MyPrinterViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPrinterViewControll.swift; sourceTree = "<group>"; };
+		DD433C6920F5CE50009915FF /* FeedbackViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewControll.swift; sourceTree = "<group>"; };
+		DD433C6B20F60D19009915FF /* PasswordViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewControll.swift; sourceTree = "<group>"; };
+		DD463D2420EB94BC003A257C /* DataFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFile.swift; sourceTree = "<group>"; };
+		DD51829F2105F53500648950 /* BindViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindViewControll.swift; sourceTree = "<group>"; };
+		DD5956B120E9BBE800490643 /* Easyprint copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Easyprint copy-Info.plist"; path = "/Users/app/Desktop/DemoTest/Easyprint/Easyprint copy-Info.plist"; sourceTree = "<absolute>"; };
+		DD59644E20E4C2AB00B28CDF /* CouldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouldViewController.swift; sourceTree = "<group>"; };
+		DD59645020E4E8FD00B28CDF /* childViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = childViewControllers.swift; sourceTree = "<group>"; };
+		DD871D702134D90B009103BE /* MenuViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewControll.swift; sourceTree = "<group>"; };
+		DD871D7421356B2C009103BE /* MainViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +112,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA045F61ECCB745B3528DA0C /* Pods_Easyprint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD03EEA26E24493B5681BE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				779E9140082B0B38B90D744E /* Pods_Easyprint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD1994C220A57B75000F1048 = {
 			isa = PBXGroup;
 			children = (
 				DD1994CD20A57B75000F1048 /* Easyprint */,
 				DD1994CC20A57B75000F1048 /* Products */,
+				F1F97769EF66B6732574FF0C /* Pods */,
+				DD03EEA26E24493B5681BE13 /* Frameworks */,
+				DD5956B120E9BBE800490643 /* Easyprint copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +149,62 @@
 		DD1994CD20A57B75000F1048 /* Easyprint */ = {
 			isa = PBXGroup;
 			children = (
+				DD1994E220A5834A000F1048 /* img */,
 				DD1994CE20A57B75000F1048 /* AppDelegate.swift */,
 				DD1994D020A57B75000F1048 /* ViewController.swift */,
+				DD59644E20E4C2AB00B28CDF /* CouldViewController.swift */,
 				DD1994D220A57B75000F1048 /* Main.storyboard */,
 				DD1994D520A57B7C000F1048 /* Assets.xcassets */,
 				DD1994D720A57B7C000F1048 /* LaunchScreen.storyboard */,
 				DD1994DA20A57B7C000F1048 /* Info.plist */,
+				DD59645020E4E8FD00B28CDF /* childViewControllers.swift */,
+				DD1466F520E5D14E00BB3B22 /* MyCustomView.swift */,
+				DD0EF264211003C1005465E4 /* ModelListViewControll.swift */,
+				DD463D2420EB94BC003A257C /* DataFile.swift */,
+				DD0667BF20EE347100139923 /* ModelDetailControll.swift */,
+				DD1018E7213E7B7100524D8C /* ModelPrintControll.swift */,
+				DD1C17A220EF434600499FDB /* LoginViewControll.swift */,
+				DD0BBAAB20F0A79500DE8F88 /* RegisterViewControll.swift */,
+				DD0BBAAD20F0AB0E00DE8F88 /* ForgetPasswordViewControll.swift */,
+				DD088A432109BE2000ED7652 /* ResetPasswordViewControll.swift */,
+				DD3654B520F463C000403BB3 /* AboutViewControll.swift */,
+				DD3654B720F4A43300403BB3 /* MyViewControll.swift */,
+				DD433C6920F5CE50009915FF /* FeedbackViewControll.swift */,
+				DD433C6B20F60D19009915FF /* PasswordViewControll.swift */,
+				DD09425C20FCA03500BECDFD /* MoveViewControll.swift */,
+				DD09425E20FCA5A100BECDFD /* TempViewControll.swift */,
+				DD09426020FCAEA900BECDFD /* LevelViewControll.swift */,
+				DD09426220FCB03B00BECDFD /* FilamentViewControll.swift */,
+				DD09426420FCB04F00BECDFD /* WifiViewControll.swift */,
+				DD09426620FCB06200BECDFD /* ConfigViewControll.swift */,
+				DD09426820FCC59600BECDFD /* WifiSetControll.swift */,
+				DD13A11820FDD43A00AEBEA5 /* PrintBaseViewControll.swift */,
+				DD871D7421356B2C009103BE /* MainViewControll.swift */,
+				DD871D702134D90B009103BE /* MenuViewControll.swift */,
+				DD38D91120F6F176005A7697 /* MyPrinterViewControll.swift */,
+				DD51829F2105F53500648950 /* BindViewControll.swift */,
+				DD116B0B2108158A001D3EF1 /* PrinterDetailViewControll.swift */,
+				DD0690822106B5AF001AAEC6 /* PrinterProfileViewControll.swift */,
+				DD0690842106BBE6001AAEC6 /* MaterialProflieViewControll.swift */,
+				DD0690862106F8AE001AAEC6 /* PrinterProfileDetailViewControll.swift */,
+				DD0690882106F8CE001AAEC6 /* MaterialProfileDetailViewControll.swift */,
+				DD0A3BFE210C0165006CDDF6 /* ProgressView.swift */,
+				DD0D787D21128E10007250EB /* ResponseError.swift */,
+				DD0F5D5C211931DB003C5D3A /* BaseNavigationControll.swift */,
+				DD1163B3211D7D3200D0D5AD /* ShadowView.swift */,
+				DD13774B21479CB200C98142 /* SingletonSocket.swift */,
+				DD12CAF9218FDC26006B394F /* ChooseFileControll.swift */,
 			);
 			path = Easyprint;
+			sourceTree = "<group>";
+		};
+		F1F97769EF66B6732574FF0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A67C7165926C34F628FDE648 /* Pods-Easyprint.debug.xcconfig */,
+				108444707E4F0C026838344A /* Pods-Easyprint.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD1994DD20A57B7C000F1048 /* Build configuration list for PBXNativeTarget "Easyprint" */;
 			buildPhases = (
+				A3A3F884224312B7BE828B22 /* [CP] Check Pods Manifest.lock */,
 				DD1994C720A57B75000F1048 /* Sources */,
 				DD1994C820A57B75000F1048 /* Frameworks */,
 				DD1994C920A57B75000F1048 /* Resources */,
+				8825E87999F684A4B31E3E3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1994E320A5834B000F1048 /* img in Resources */,
 				DD1994D920A57B7C000F1048 /* LaunchScreen.storyboard in Resources */,
 				DD1994D620A57B7C000F1048 /* Assets.xcassets in Resources */,
 				DD1994D420A57B75000F1048 /* Main.storyboard in Resources */,
@@ -130,13 +276,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8825E87999F684A4B31E3E3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Easyprint/Pods-Easyprint-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DNSPageView/DNSPageView.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ZLaunchAd/ZLaunchAd.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DNSPageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLaunchAd.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easyprint/Pods-Easyprint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A3F884224312B7BE828B22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easyprint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD1994C720A57B75000F1048 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1163B4211D7D3200D0D5AD /* ShadowView.swift in Sources */,
+				DD13774C21479CB200C98142 /* SingletonSocket.swift in Sources */,
+				DD3654B820F4A43300403BB3 /* MyViewControll.swift in Sources */,
+				DD1466F620E5D14E00BB3B22 /* MyCustomView.swift in Sources */,
+				DD0D787E21128E10007250EB /* ResponseError.swift in Sources */,
+				DD09425D20FCA03500BECDFD /* MoveViewControll.swift in Sources */,
+				DD59645120E4E8FD00B28CDF /* childViewControllers.swift in Sources */,
+				DD09426320FCB03B00BECDFD /* FilamentViewControll.swift in Sources */,
+				DD0690832106B5AF001AAEC6 /* PrinterProfileViewControll.swift in Sources */,
+				DD13A11920FDD43A00AEBEA5 /* PrintBaseViewControll.swift in Sources */,
+				DD1C17A320EF434600499FDB /* LoginViewControll.swift in Sources */,
+				DD116B0C2108158A001D3EF1 /* PrinterDetailViewControll.swift in Sources */,
+				DD09426720FCB06200BECDFD /* ConfigViewControll.swift in Sources */,
 				DD1994D120A57B75000F1048 /* ViewController.swift in Sources */,
+				DD09426520FCB04F00BECDFD /* WifiViewControll.swift in Sources */,
+				DD871D7521356B2C009103BE /* MainViewControll.swift in Sources */,
+				DD871D712134D90B009103BE /* MenuViewControll.swift in Sources */,
+				DD12CAFA218FDC26006B394F /* ChooseFileControll.swift in Sources */,
+				DD3654B620F463C000403BB3 /* AboutViewControll.swift in Sources */,
+				DD0690892106F8CE001AAEC6 /* MaterialProfileDetailViewControll.swift in Sources */,
+				DD0EF265211003C1005465E4 /* ModelListViewControll.swift in Sources */,
+				DD463D2520EB94BC003A257C /* DataFile.swift in Sources */,
+				DD1018E8213E7B7100524D8C /* ModelPrintControll.swift in Sources */,
+				DD38D91220F6F176005A7697 /* MyPrinterViewControll.swift in Sources */,
+				DD0690852106BBE6001AAEC6 /* MaterialProflieViewControll.swift in Sources */,
+				DD0BBAAC20F0A79500DE8F88 /* RegisterViewControll.swift in Sources */,
+				DD433C6C20F60D19009915FF /* PasswordViewControll.swift in Sources */,
+				DD5182A02105F53500648950 /* BindViewControll.swift in Sources */,
+				DD0667C020EE347100139923 /* ModelDetailControll.swift in Sources */,
+				DD088A442109BE2100ED7652 /* ResetPasswordViewControll.swift in Sources */,
+				DD09425F20FCA5A100BECDFD /* TempViewControll.swift in Sources */,
+				DD59644F20E4C2AB00B28CDF /* CouldViewController.swift in Sources */,
+				DD0BBAAE20F0AB0E00DE8F88 /* ForgetPasswordViewControll.swift in Sources */,
+				DD0F5D5D211931DB003C5D3A /* BaseNavigationControll.swift in Sources */,
+				DD433C6A20F5CE50009915FF /* FeedbackViewControll.swift in Sources */,
 				DD1994CF20A57B75000F1048 /* AppDelegate.swift in Sources */,
+				DD0690872106F8AE001AAEC6 /* PrinterProfileDetailViewControll.swift in Sources */,
+				DD0A3BFF210C0165006CDDF6 /* ProgressView.swift in Sources */,
+				DD09426120FCAEA900BECDFD /* LevelViewControll.swift in Sources */,
+				DD09426920FCC59600BECDFD /* WifiSetControll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +406,7 @@
 		DD1994DB20A57B7C000F1048 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -194,9 +436,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ran Liu (4PELDF9MV4)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8R96E5297J;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -213,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -225,6 +468,7 @@
 		DD1994DC20A57B7C000F1048 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -254,9 +498,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ran Liu (4PELDF9MV4)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8R96E5297J;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -267,8 +512,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -278,37 +524,53 @@
 		};
 		DD1994DE20A57B7C000F1048 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67C7165926C34F628FDE648 /* Pods-Easyprint.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Ran Liu (4PELDF9MV4)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 29ZSYF2XLX;
 				INFOPLIST_FILE = Easyprint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.geeetech.Easyprint;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = EP2iOS08271027;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6e5403e4-c52f-4a88-9041-140f226aea1b";
+				PROVISIONING_PROFILE_SPECIFIER = EP2iOS08271027_DEV;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DD1994DF20A57B7C000F1048 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108444707E4F0C026838344A /* Pods-Easyprint.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Ran Liu (4PELDF9MV4)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 29ZSYF2XLX;
 				INFOPLIST_FILE = Easyprint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.geeetech.Easyprint;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = EP2iOS08271027;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6e5403e4-c52f-4a88-9041-140f226aea1b";
+				PROVISIONING_PROFILE_SPECIFIER = EP2iOS08271027_DEV;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

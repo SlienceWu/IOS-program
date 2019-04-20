@@ -7,15 +7,47 @@
 //
 
 import UIKit
+import ZLaunchAd
+import Alamofire
+import SwiftyJSON
+import Reachability
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let reachability = Reachability(hostname: "www.apple.com")!
+    var count = 0
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if UserDefaults.standard.bool(forKey: "firstLauch") == false {
+            UserDefaults.standard.set(true, forKey: "firstLauch")
+            let userParams = ["email": "", "name": "", "address": "", "avatar": "", "token": "", "token_expire": "", "state": ""]
+            UserData().setData(key: "user", value: userParams as AnyObject)
+        }
+        //网络检测
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
+        do{
+            try reachability.startNotifier()
+        }catch{
+            print("could not start reachability notifier")
+        }
+        
+        //广告页
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+//        let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootView")
+        //#if DEBUG
+        let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootView")
+        //#else
+        //let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainNavigation")
+        //#endif
+        window?.rootViewController = homeVC
+        window?.makeKeyAndVisible()
+
+        showAd()
+        creatTimer()
         return true
     }
 
@@ -40,7 +72,82 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    @objc func reachabilityChanged(note: Notification) {
+        
+        let reachability = note.object as! Reachability
+        switch reachability.connection {
+        case .wifi:
+            PersonInfo.isConnectToServer = 1
+            print("Reachable via WiFi")
+        case .cellular:
+            PersonInfo.isConnectToServer = 1
+            print("Reachable via Cellular")
+        case .none:
+            PersonInfo.isConnectToServer = 0
+            PersonInfo().initTemp()
+            print("Network not reachable")
+        }
+    }
 }
-
+extension AppDelegate{
+    func showAd(){
+        let adView = ZLaunchAd.create()
+        let buttonConfig = ZLaunchSkipButtonConfig()
+        buttonConfig.skipBtnType = ZLaunchSkipButtonType(rawValue: 0)!
+        let imageResource = ZLaunchAdImageResourceConfigure()
+        imageResource.animationType = ZLaunchAnimationType(rawValue: 0)!
+        
+        imageResource.imageDuration = 6
+        imageResource.imageFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+        request { (imgUrl) in
+            
+            imageResource.imageNameOrImageURL = imgUrl
+            adView.setImageResource(imageResource, action: {
+                let urlStr = "http://www.giantarm.com/featured_product/d200-3dprinter.html"
+                let url = URL(string: urlStr)
+                
+                if #available(iOS 10, *){
+                    UIApplication.shared.open(url!, options: [:], completionHandler: {(success) in})
+                } else {
+                    UIApplication.shared.openURL(url!)
+                }
+            })
+        }
+    }
+}
+extension AppDelegate{
+    //创建定时器
+    func creatTimer(){
+        let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerManager), userInfo: nil, repeats: true)
+        RunLoop.current.add(timer, forMode: .commonModes)
+    }
+    //创建定时器管理者
+    @objc func timerManager(){
+        let url = Url.basePath + "/v1/app/heartbeat"
+        AlamofireCustom.alamofireManager.request(url).response{
+            response in
+            let code = response.response?.statusCode
+            if code == 200{
+                self.count = 0
+                PersonInfo.isConnectToServer = 1
+            }else{
+                self.count = self.count + 1
+                if self.count > 5{
+                    PersonInfo.isConnectToServer = 2
+                    PersonInfo().initTemp()
+                }
+            }
+        }
+    }
+    func request(_ completion: @escaping (String) ->() ) -> Void{
+        
+        let url = Url.basePath + "/v1/app/ad"
+        Alamofire.request(url).responseJSON{
+            (response) in
+            let list = JSON(response.result.value as Any)
+            let imgUrl = list[0]["image_path"].stringValue
+            completion(imgUrl)
+        }
+    }
+}
